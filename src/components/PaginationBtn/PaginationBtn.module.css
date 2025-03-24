@@ -1,0 +1,19 @@
+.btn {
+  text-decoration: none;
+  color: #000;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 30px;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}
+
+.active {
+  background-color: #6093bf;
+}

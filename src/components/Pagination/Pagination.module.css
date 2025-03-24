@@ -1,0 +1,22 @@
+.pagination {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.btn {
+  user-select: none;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  height: 30px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}

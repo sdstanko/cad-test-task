@@ -1,17 +1,15 @@
-import { BrowserRouter, Route, Routes } from "react-router";
+import { Route, Routes } from "react-router";
 import ProductList from "./pages/ProductList/ProductList";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
+import "./App.css";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<ProductList />} />
-          <Route path="/product/:id" element={<ProductDetails />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <Routes>
+      <Route path="/" element={<ProductList />} />
+      {/* <Route path="/page/:id" element={<ProductList />} /> */}
+      <Route path="/product/:id" element={<ProductDetails />} />
+    </Routes>
   );
 }
 
