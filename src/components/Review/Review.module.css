@@ -1,0 +1,26 @@
+.item {
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.name {
+  font-weight: bold;
+  color: var(--main-text-color);
+}
+
+.date {
+  color: #666;
+}
+
+.rating {
+  color: #ffd700;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.comment {
+  color: var(--main-text-color);
+  margin-top: 10px;
+}

@@ -1,0 +1,72 @@
+:root {
+  --main-text-color: #265c8c;
+  --bg-color: #6093bf;
+  --border-color: #03318c;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.backBtn {
+  color: #000;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.category {
+  margin-bottom: 10px;
+}
+
+.imageGallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.largeImg {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid var(--border-color);
+}
+
+.reviews {
+  margin-top: 40px;
+}
+
+.reviews__title {
+  color: var(--main-text-color);
+  margin-bottom: 20px;
+}
+
+.reviews__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

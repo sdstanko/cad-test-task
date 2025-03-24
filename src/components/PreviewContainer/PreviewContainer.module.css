@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .preview {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+    transition: transform 0.3s, border 0.3s;
+    cursor: pointer;
+  }
+  
+  .preview:hover {
+    transform: scale(1.1);
+    border-color: #021859;
+  }
+  
+  .preview.active {
+    border-color: #021859;
+    transform: scale(1.1);
+  }

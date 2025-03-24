@@ -8,7 +8,10 @@ interface PaginationBtnProps {
 
 const PaginationBtn = ({ page, active, onClick }: PaginationBtnProps) => {
   return (
-    <button className={active ? [styles.btn, styles.active].join(' ') : styles.btn} onClick={onClick}>
+    <button
+      className={active ? [styles.btn, styles.active].join(" ") : styles.btn}
+      onClick={onClick}
+    >
       {page}
     </button>
   );

@@ -1,3 +1,5 @@
+import Review from "./Review";
+
 export default interface Product {
     id: number;
     title: string;
@@ -5,4 +7,7 @@ export default interface Product {
     price: number;
     thumbnail: string;
     images: string[];
+    category: string;
+    rating: number;
+    reviews: Review[]
   }
