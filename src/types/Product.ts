@@ -10,4 +10,5 @@ export default interface Product {
     category: string;
     rating: number;
     reviews: Review[]
+    stock: number;
   }

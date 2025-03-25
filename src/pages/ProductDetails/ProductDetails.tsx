@@ -45,6 +45,8 @@ const ProductDetails = () => {
       <div className={styles.description}>{product.description}</div>
       <div className={styles.category}>{`Category: ${product.category}`}</div>
       <div className={styles.category}>{`Rating: ${product.rating}`}</div>
+      <div className={styles.category}>{`Price: ${product.price}$`}</div>
+      <div className={styles.category}>{`In stock: ${product.stock}`}</div>
 
       <div className={styles.reviews}>
         <h3 className={styles.reviews__title}>Reviews:</h3>
