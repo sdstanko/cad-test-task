@@ -4,6 +4,7 @@ import styles from "./ProductDetails.module.css";
 import { useState } from "react";
 import Review from "../../components/Review/Review";
 import PreviewContainer from "../../components/PreviewContainer/PreviewContainer";
+import Spinner from "../../UI/Spinner/Spinner";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -15,7 +16,7 @@ const ProductDetails = () => {
   }
   const { product, loading, error } = useFetchProductDetails(+id);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Spinner/>;
   if (error) return <p>{error}</p>;
   if (!product) return <p>No product found.</p>;
 

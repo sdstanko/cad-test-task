@@ -3,13 +3,14 @@ import useFetchProducts from "../../hooks/useFetchProducts";
 import ProductItem from "../../components/ProductItem/ProductItem";
 import Pagination from "../../components/Pagination/Pagination";
 import styles from "./ProductList.module.css";
+import Spinner from "../../UI/Spinner/Spinner";
 
 const ProductList = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const currentPage = Number(searchParams.get("page")) || 1;
   const { productsData, loading, error } = useFetchProducts(currentPage);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Spinner/>;
   if (error) return <p>{error}</p>;
   if (!productsData) return <p>No products found.</p>;
 
